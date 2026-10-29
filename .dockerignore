@@ -1,0 +1,25 @@
+# Only send files required by the static build to the Docker daemon.
+**
+!Dockerfile
+!package.json
+!package-lock.json
+!tsconfig.json
+!vite.config.ts
+!tokens.css
+!index.html
+!src/
+!src/**
+!public/
+!public/**
+!scripts/
+!scripts/generate-seo.mjs
+!scripts/site-translations.mjs
+!scripts/prepare-container.mjs
+!zh/
+!zh/index.html
+!ja/
+!ja/index.html
+!fr/
+!fr/index.html
+!docker/
+!docker/nginx.conf

@@ -1,8 +1,6 @@
 # Duo Studio
 
-[English](README.md) · [简体中文](README.zh-CN.md) · **[在线体验 ↗](https://iduo.clothpath.com/)**
-
-[![OctoCounts](https://api.octocounts.com/badge/huanglizhuo/iPhoneDuoMock)](https://octocounts.com/github/huanglizhuo/iPhoneDuoMock)
+[English](README.md) · [简体中文](README.zh-CN.md) · [Dokploy 自部署](docs/SELF_HOSTING.md)
 
 将 App 截图或网页放进折叠屏设备，预览不同姿态，导出效果图和开合动画。全部在浏览器中运行。
 
@@ -30,6 +28,8 @@ npm run dev
 打开 [localhost:5173](http://localhost:5173)。执行 `npm run build` 生成 `dist/`。
 
 部署到 **Cloudflare Pages**：构建命令为 `npm run build`，输出目录为 `dist`，无需后端或 API key。
+
+此 Fork 供设计师私有部署：使用根目录 `Dockerfile`，容器端口为 **8080**。运行时只有非 root Nginx 与静态文件，包含安全响应头，不包含统计。Dokploy 填写方式、访问控制及本地保存边界见[自部署说明](docs/SELF_HOSTING.md)。
 
 ## 致谢与许可
 

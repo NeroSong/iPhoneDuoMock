@@ -1,8 +1,6 @@
 # Duo Studio
 
-[English](README.md) · [简体中文](README.zh-CN.md) · **[Try it online ↗](https://iduo.clothpath.com/)**
-
-[![OctoCounts](https://api.octocounts.com/badge/huanglizhuo/iPhoneDuoMock)](https://octocounts.com/github/huanglizhuo/iPhoneDuoMock)
+[English](README.md) · [简体中文](README.zh-CN.md) · [Self-host with Dokploy](docs/SELF_HOSTING.md)
 
 Turn app screenshots and websites into foldable device mockups. Preview different poses and export images or animations, all in your browser.
 
@@ -28,6 +26,8 @@ npm run dev
 Open [localhost:5173](http://localhost:5173). Run `npm run build` to create `dist/`.
 
 For **Cloudflare Pages**, use build command `npm run build` and output directory `dist`. No backend or API keys required.
+
+For this fork's private designer deployment, use the root `Dockerfile` and port **8080**. It serves only static files with non-root Nginx, security headers, and no analytics. See the [Dokploy deployment and privacy notes](docs/SELF_HOSTING.md). Access control must be provided by your private network or reverse proxy.
 
 ## Credits & license
 
