@@ -16,7 +16,7 @@ COPY --chown=node:node ja ./ja
 COPY --chown=node:node fr ./fr
 RUN npm run build && node scripts/prepare-container.mjs
 
-FROM nginxinc/nginx-unprivileged:stable-alpine AS runtime
+FROM nginx/nginx-unprivileged:1.30.7-alpine AS runtime
 USER root
 RUN rm -rf /usr/share/nginx/html/* /etc/nginx/conf.d/*
 COPY docker/nginx.conf /etc/nginx/nginx.conf
